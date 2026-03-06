@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Foodie - Login</title>
+</head>
+<body>
+
+<header>
+  <nav class="navbar flex between wrapper">
+    <a href="index.html" class="logo">Foodie.</a>
+    <ul class="navlist flex gap-3">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="orders.html">Orders</a></li>
+      <li><a href="cart.html">Cart</a></li>
+      <li><a href="admin.html">Admin</a></li>
+    </ul>
+
+    <a href="#" class="hamburger" id="hamburgerBtn">☰</a>
+    <ul class="mobile-menu" id="mobileMenu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="orders.html">Orders</a></li>
+      <li><a href="cart.html">Cart</a></li>
+      <li><a href="admin.html">Admin</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="wrapper p-top">
+  <div class="text-center">
+    <h5>Account</h5>
+    <h2>Login / Signup</h2>
+  </div>
+
+  <div class="grid-row mt-4" style="align-items:start">
+    <!-- Signup -->
+    <form class="form" id="signupForm">
+      <h3>Signup</h3>
+
+      <div class="input">
+        <label>Name</label>
+        <input name="name" placeholder="Your name" />
+      </div>
+
+      <div class="input">
+        <label>Email</label>
+        <input name="email" type="email" placeholder="you@email.com" />
+      </div>
+
+      <div class="input">
+        <label>Password</label>
+        <input name="password" type="password" placeholder="********" />
+      </div>
+
+      <div class="input">
+        <label>Role</label>
+        <select name="role" style="padding:.9rem 1rem;border-radius:1rem;border:1px solid rgba(0,0,0,.12)">
+          <option value="user">User</option>
+          <option value="admin">Admin</option>
+        </select>
+        <small style="color:rgba(33,33,33,.7)">Admin role only for demo.</small>
+      </div>
+
+      <button class="btn mt-2" type="submit">Create Account</button>
+      <div class="msg" id="signupMsg"></div>
+    </form>
+
+    <!-- Login -->
+    <form class="form" id="loginForm">
+      <h3>Login</h3>
+
+      <div class="input">
+        <label>Email</label>
+        <input name="email" type="email" placeholder="you@email.com" />
+      </div>
+
+      <div class="input">
+        <label>Password</label>
+        <input name="password" type="password" placeholder="********" />
+      </div>
+
+      <button class="btn mt-2" type="submit">Login</button>
+      <button class="btn btn-soft mt-2" id="logoutBtn" type="button">Logout</button>
+
+      <div class="msg" id="loginMsg"></div>
+
+      <div class="mt-2" style="color:rgba(33,33,33,.75)">
+        Current user: <strong id="currentUserLabel">None</strong>
+      </div>
+    </form>
+  </div>
+</main>
+
+<footer>© 2026 Foodie. All rights reserved.</footer>
+<script src="main.js"></script>
+</body>
+</html>

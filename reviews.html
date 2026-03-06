@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+
+  <!-- Font Awesome ✅ FIX -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
+  <title>Foodie - Reviews</title>
+</head>
+<body>
+
+<header>
+  <nav class="navbar flex between wrapper">
+    <a href="index.html" class="logo">Foodie.</a>
+
+    <ul class="navlist flex gap-3">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="reviews.html" class="active">Reviews</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li>
+        <a href="cart.html" class="cart-icon" aria-label="Cart">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="cart-value">0</span>
+        </a>
+      </li>
+    </ul>
+
+    <a href="#" class="hamburger" id="hamburgerBtn" aria-label="Open Menu">
+      <i class="fa-solid fa-bars"></i>
+    </a>
+
+    <ul class="mobile-menu" id="mobileMenu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="reviews.html" class="active">Reviews</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="cart.html">Cart</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="wrapper p-top">
+
+  <!-- ✅ HERO -->
+  <section class="rev-hero">
+    <div class="rev-hero__inner">
+      <div class="rev-hero__left">
+        <span class="rev-pill"><i class="fa-solid fa-star"></i> Customer Reviews</span>
+        <h1 class="rev-title">Loved by people who order daily.</h1>
+        <p class="rev-sub">
+          Real feedback from customers — fast delivery, great taste, hygienic packaging, and smooth ordering.
+        </p>
+
+        <div class="rev-summary">
+          <div class="rev-score">
+            <div class="rev-score__num">4.9</div>
+            <div class="rev-score__stars" aria-label="4.9 stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="rev-score__meta">Based on 1,240+ orders</div>
+          </div>
+
+          <div class="rev-tags">
+            <span><i class="fa-solid fa-bolt"></i> Fast delivery</span>
+            <span><i class="fa-solid fa-leaf"></i> Fresh food</span>
+            <span><i class="fa-solid fa-shield-halved"></i> Hygiene checked</span>
+          </div>
+        </div>
+
+        <div class="rev-actions">
+          <a href="menu.html" class="btn"><i class="fa-solid fa-utensils"></i>&nbsp; Order Now</a>
+          <a href="contact.html" class="btn btn-soft"><i class="fa-regular fa-message"></i>&nbsp; Support</a>
+        </div>
+      </div>
+
+      <div class="rev-hero__right">
+        <img src="images/delivery-boy-with-phone.png" alt="Delivery Boy" class="rev-hero__img">
+      </div>
+    </div>
+  </section>
+
+  <!-- ✅ SLIDER -->
+  <section class="rev-section">
+    <div class="text-center">
+      <h5>Testimonials</h5>
+      <h2>What customers say</h2>
+      <p class="rev-lead">Premium experience, honest reviews — a real product feel.</p>
+    </div>
+
+    <div class="rev-slider mt-4">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide rev-card">
+            <div class="rev-card__top">
+              <div class="rev-user">
+                <div class="rev-avatar">A</div>
+                <div>
+                  <h4>Ayesha Khan</h4>
+                  <div class="rev-muted">Lahore • 2 days ago</div>
+                </div>
+              </div>
+              <div class="rev-stars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+            <p class="rev-quote">“Fast delivery and delicious taste. Packaging was clean and food was hot.”</p>
+          </div>
+
+          <div class="swiper-slide rev-card">
+            <div class="rev-card__top">
+              <div class="rev-user">
+                <div class="rev-avatar">A</div>
+                <div>
+                  <h4>Ali Raza</h4>
+                  <div class="rev-muted">Islamabad • 1 week ago</div>
+                </div>
+              </div>
+              <div class="rev-stars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+            <p class="rev-quote">“Amazing quality and great service. Ordering was smooth and simple.”</p>
+          </div>
+
+          <div class="swiper-slide rev-card">
+            <div class="rev-card__top">
+              <div class="rev-user">
+                <div class="rev-avatar">S</div>
+                <div>
+                  <h4>Sana Malik</h4>
+                  <div class="rev-muted">Karachi • 3 days ago</div>
+                </div>
+              </div>
+              <div class="rev-stars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+            <p class="rev-quote">“Ordering was super easy. The food was fresh and the rider was polite.”</p>
+          </div>
+
+          <div class="swiper-slide rev-card">
+            <div class="rev-card__top">
+              <div class="rev-user">
+                <div class="rev-avatar">H</div>
+                <div>
+                  <h4>Hamza Ahmed</h4>
+                  <div class="rev-muted">Peshawar • 5 days ago</div>
+                </div>
+              </div>
+              <div class="rev-stars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+            <p class="rev-quote">“Best experience so far. Their support responds quickly and the delivery is on time.”</p>
+          </div>
+
+        </div>
+
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ✅ RATING BREAKDOWN -->
+  <section class="rev-section">
+    <div class="rev-break">
+      <div>
+        <h2>Rating Breakdown</h2>
+        <p class="rev-lead" style="text-align:left;margin-inline:0;">
+          A quick summary of how customers rate Foodie.
+        </p>
+      </div>
+
+      <div class="rev-bars">
+        <div class="rev-bar">
+          <span>5 Stars</span>
+          <div class="rev-bar__track"><div class="rev-bar__fill" style="width:88%"></div></div>
+          <strong>88%</strong>
+        </div>
+        <div class="rev-bar">
+          <span>4 Stars</span>
+          <div class="rev-bar__track"><div class="rev-bar__fill" style="width:9%"></div></div>
+          <strong>9%</strong>
+        </div>
+        <div class="rev-bar">
+          <span>3 Stars</span>
+          <div class="rev-bar__track"><div class="rev-bar__fill" style="width:2%"></div></div>
+          <strong>2%</strong>
+        </div>
+        <div class="rev-bar">
+          <span>2 Stars</span>
+          <div class="rev-bar__track"><div class="rev-bar__fill" style="width:1%"></div></div>
+          <strong>1%</strong>
+        </div>
+        <div class="rev-bar">
+          <span>1 Star</span>
+          <div class="rev-bar__track"><div class="rev-bar__fill" style="width:0%"></div></div>
+          <strong>0%</strong>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ✅ CTA -->
+  <section class="rev-cta">
+    <div class="rev-cta__inner">
+      <div>
+        <h2>Want the same experience?</h2>
+        <p>Choose your favorite meal and order now — fast checkout and clean delivery.</p>
+      </div>
+      <div class="rev-cta__actions">
+        <a href="menu.html" class="btn"><i class="fa-solid fa-bag-shopping"></i>&nbsp; Order Now</a>
+        <a href="services.html" class="btn btn-soft"><i class="fa-solid fa-circle-info"></i>&nbsp; See Services</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>© 2026 Foodie. All rights reserved.</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

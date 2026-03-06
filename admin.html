@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ✅ Font Awesome (icons) -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+  <title>Foodie - Admin</title>
+</head>
+<body>
+
+<header>
+  <nav class="navbar flex between wrapper">
+    <a href="index.html" class="logo">Foodie.</a>
+
+    <ul class="navlist flex gap-3">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="orders.html">Orders</a></li>
+      <li><a href="admin.html">Admin</a></li>
+      <li><a href="cart.html">Cart</a></li>
+      <li><a href="login.html">Login</a></li>
+    </ul>
+
+    <a href="#" class="hamburger" id="hamburgerBtn" aria-label="Open Menu">
+      <i class="fa-solid fa-bars"></i>
+    </a>
+
+    <ul class="mobile-menu" id="mobileMenu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="orders.html">Orders</a></li>
+      <li><a href="admin.html">Admin</a></li>
+      <li><a href="cart.html">Cart</a></li>
+      <li><a href="login.html">Login</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="wrapper p-top">
+  <div class="text-center">
+    <h5>Admin Panel</h5>
+    <h2>Manage Products</h2>
+  </div>
+
+  <!-- ✅ LOCK BOX -->
+  <div id="adminLock" class="card text-center" style="display:none;max-width:780px;margin:0 auto;">
+    <h3>Admin Access Required</h3>
+    <p style="margin-top:.6rem;color:rgba(33,33,33,.75);line-height:1.6">
+      Please login as <strong>Admin</strong> to open this panel.
+    </p>
+    <div class="mt-2">
+      <a class="btn" href="login.html">Go to Login</a>
+    </div>
+  </div>
+
+  <!-- ✅ ADMIN PANEL (required by main.js) -->
+  <div id="adminPanel">
+    <form class="form mt-4" id="adminForm">
+      <div class="row">
+        <div class="input">
+          <label>Product ID (unique)</label>
+          <input name="id" placeholder="e.g. burger" />
+        </div>
+        <div class="input">
+          <label>Name</label>
+          <input name="name" placeholder="e.g. Double Burger" />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input">
+          <label>Price</label>
+          <input name="price" type="number" placeholder="e.g. 25" />
+        </div>
+        <div class="input">
+          <label>Image Path</label>
+          <input name="image" placeholder="images/burger.png" />
+        </div>
+      </div>
+
+      <!-- ✅ Category MUST be inside the form -->
+      <div class="input">
+        <label>Category</label>
+        <input name="category" placeholder="e.g. fastfood / italian / pasta" />
+      </div>
+
+      <button class="btn mt-2" type="submit">Add / Update Product</button>
+      <div class="msg" id="adminMsg"></div>
+    </form>
+
+    <div class="admin-list mt-4">
+      <h3>Current Products</h3>
+      <div id="adminProducts" class="mt-2"></div>
+    </div>
+  </div>
+</main>
+
+<footer>© 2026 Foodie. All rights reserved.</footer>
+<script src="main.js"></script>
+</body>
+</html>

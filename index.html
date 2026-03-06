@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Foodie - Home</title>
+</head>
+<body>
+
+<header>
+  <nav class="navbar flex between wrapper">
+    <a href="index.html" class="logo">Foodie.</a>
+
+    <ul class="navlist flex gap-3">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="reviews.html">Reviews</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li>
+        <a href="cart.html" class="cart-icon" aria-label="Cart">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="cart-value">0</span>
+        </a>
+      </li>
+    </ul>
+
+    <a href="#" class="hamburger" id="hamburgerBtn" aria-label="Open Menu">
+      <i class="fa-solid fa-bars"></i>
+    </a>
+
+    <ul class="mobile-menu" id="mobileMenu">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="reviews.html">Reviews</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="cart.html">Cart</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="wrapper p-top">
+
+  <!-- ✅ HERO PRO -->
+  <section class="home-hero">
+    <div class="home-hero__inner">
+      <div class="home-hero__left">
+        <span class="home-pill"><i class="fa-solid fa-bolt"></i> Fast • Fresh • Premium</span>
+        <h1 class="home-title">Enjoy Your Delicious <span>Food</span></h1>
+        <p class="home-sub">
+          Fast delivery, best quality, and easy ordering — all in one place.
+          Order in seconds and track your meal like a real delivery app.
+        </p>
+
+        <div class="home-actions">
+          <a class="btn" href="menu.html"><i class="fa-solid fa-bag-shopping"></i>&nbsp; Order now</a>
+          <a class="btn btn-soft" href="services.html"><i class="fa-solid fa-circle-info"></i>&nbsp; How it works</a>
+        </div>
+
+        <div class="home-badges">
+          <div class="home-badge"><i class="fa-solid fa-star"></i> 4.9 rating</div>
+          <div class="home-badge"><i class="fa-solid fa-clock"></i> 25–35 min</div>
+          <div class="home-badge"><i class="fa-solid fa-shield-halved"></i> Hygiene checked</div>
+        </div>
+
+        <div class="home-social">
+          <a href="#" class="social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="social-icon" aria-label="X/Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" class="social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <div class="home-hero__right">
+        <img src="images/delivery-boy.png" alt="Delivery boy" class="home-hero__img" />
+        <div class="home-float-card">
+          <div class="home-float-top">
+            <strong>Order Tracking</strong>
+            <span class="home-dot"></span>
+          </div>
+          <p>Your rider is nearby. ETA 12 min.</p>
+          <div class="home-bar"><span></span></div>
+          <div class="home-float-foot">
+            <span><i class="fa-solid fa-location-dot"></i> Live</span>
+            <span><i class="fa-solid fa-bolt"></i> Fast</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ✅ SERVICES PREVIEW -->
+  <section class="home-sec">
+    <div class="text-center">
+      <h5>Our Services</h5>
+      <h2>How does it work?</h2>
+      <p class="home-lead">A clean, reliable process — just like real food delivery platforms.</p>
+    </div>
+
+    <div class="grid-row mt-4">
+      <div class="card text-center">
+        <div class="icon-box"><img src="images/easy-to-order.png" alt="Easy to order"></div>
+        <h3 class="mt-2">Easy to Order</h3>
+        <p>Few simple steps and your food is on the way.</p>
+      </div>
+
+      <div class="card text-center">
+        <div class="icon-box"><img src="images/fast-delivery.png" alt="Fast delivery"></div>
+        <h3 class="mt-2">Fast Delivery</h3>
+        <p>Always on-time delivery with real-time updates.</p>
+      </div>
+
+      <div class="card text-center">
+        <div class="icon-box"><img src="images/best-quality.png" alt="Best quality"></div>
+        <h3 class="mt-2">Best Quality</h3>
+        <p>Fresh ingredients and top quality guaranteed.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ✅ QUICK ADD -->
+  <section class="home-sec">
+    <div class="text-center">
+      <h5>Popular</h5>
+      <h2>Quick Add</h2>
+      <p class="home-lead">Top picks customers order again and again.</p>
+    </div>
+
+    <div class="grid-row mt-4">
+      <div class="card product text-center home-product">
+        <span class="home-tag">Best Seller</span>
+        <img src="images/lasagna.png" alt="Lasagna" />
+        <h3 class="mt-2">Lasagna</h3>
+        <h4 class="price">$15</h4>
+        <div class="home-product-actions">
+          <a href="#" class="btn add-to-cart-inline"
+             data-id="lasagna" data-name="Lasagna" data-price="15" data-image="images/lasagna.png">
+             Add to Cart
+          </a>
+          <a class="btn btn-soft" href="menu.html">View</a>
+        </div>
+      </div>
+
+      <div class="card product text-center home-product">
+        <span class="home-tag">Hot</span>
+        <img src="images/pizza.png" alt="Pizza" />
+        <h3 class="mt-2">Pizza</h3>
+        <h4 class="price">$20</h4>
+        <div class="home-product-actions">
+          <a href="#" class="btn add-to-cart-inline"
+             data-id="pizza" data-name="Pizza" data-price="20" data-image="images/pizza.png">
+             Add to Cart
+          </a>
+          <a class="btn btn-soft" href="menu.html">View</a>
+        </div>
+      </div>
+
+      <div class="card product text-center home-product">
+        <span class="home-tag">Chef Choice</span>
+        <img src="images/spaghetti.png" alt="Spaghetti" />
+        <h3 class="mt-2">Spaghetti</h3>
+        <h4 class="price">$18</h4>
+        <div class="home-product-actions">
+          <a href="#" class="btn add-to-cart-inline"
+             data-id="spaghetti" data-name="Spaghetti" data-price="18" data-image="images/spaghetti.png">
+             Add to Cart
+          </a>
+          <a class="btn btn-soft" href="menu.html">View</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- ✅ OFFERS / DEALS -->
+<section class="home-sec offers-sec">
+  <div class="text-center">
+    <h5>Deals</h5>
+    <h2>Today’s Best Offers</h2>
+    <p class="home-lead">Save more with combos & limited-time discounts.</p>
+  </div>
+
+  <div class="offers-grid mt-4">
+    <div class="offer-card">
+      <span class="offer-badge"><i class="fa-solid fa-fire"></i> Limited</span>
+      <h3>Family Combo</h3>
+      <p>2 Large Pizzas + 2 Drinks + Fries</p>
+      <div class="offer-bottom">
+        <strong>$39</strong>
+        <a href="menu.html" class="btn">Grab Deal</a>
+      </div>
+    </div>
+
+    <div class="offer-card premium">
+      <span class="offer-badge"><i class="fa-solid fa-bolt"></i> Hot</span>
+      <h3>Burger Blast</h3>
+      <p>2 Burgers + 2 Fries + 1 Drink</p>
+      <div class="offer-bottom">
+        <strong>$22</strong>
+        <a href="menu.html" class="btn">Order Now</a>
+      </div>
+    </div>
+
+    <div class="offer-card">
+      <span class="offer-badge"><i class="fa-solid fa-tag"></i> Save 20%</span>
+      <h3>Weekend Special</h3>
+      <p>Use code <b>FOODIE20</b> on checkout</p>
+      <div class="offer-bottom">
+        <strong>20% OFF</strong>
+        <a href="cart.html" class="btn btn-soft">Apply Code</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ✅ APP / DELIVERY CTA -->
+<section class="home-sec app-sec">
+  <div class="app-grid">
+    <div class="app-left">
+      <span class="home-pill"><i class="fa-solid fa-mobile-screen"></i> Order in seconds</span>
+      <h2 class="app-title">Get Foodie App Experience</h2>
+      <p class="home-lead">
+        Live tracking, offers, and faster checkout — just like real delivery apps.
+      </p>
+
+      <div class="app-points">
+        <div class="pt"><i class="fa-solid fa-location-dot"></i> Live rider tracking</div>
+        <div class="pt"><i class="fa-solid fa-ticket"></i> Exclusive deals</div>
+        <div class="pt"><i class="fa-solid fa-shield-halved"></i> Hygiene checked partners</div>
+      </div>
+
+      <div class="app-actions">
+        <a href="#" class="store-btn">
+          <i class="fa-brands fa-google-play"></i>
+          <span><small>GET IT ON</small><b>Google Play</b></span>
+        </a>
+        <a href="#" class="store-btn">
+          <i class="fa-brands fa-apple"></i>
+          <span><small>Download on the</small><b>App Store</b></span>
+        </a>
+      </div>
+    </div>
+
+    <div class="app-right">
+      <div class="phone-mock">
+        <div class="phone-top">
+          <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+        </div>
+        <div class="phone-body">
+          <h4>Track Your Order</h4>
+          <p class="muted">Rider nearby • ETA 12 min</p>
+          <div class="track-bar"><span></span></div>
+          <div class="mini-cards">
+            <div class="mini">🔥 Hot Deals</div>
+            <div class="mini">⚡ Fast</div>
+            <div class="mini">✅ Safe</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ✅ NEWSLETTER -->
+<section class="home-sec newsletter-sec">
+  <div class="newsletter">
+    <div>
+      <h3>Get offers in your inbox</h3>
+      <p class="home-lead">Weekly deals, new items & exclusive coupons.</p>
+    </div>
+
+    <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed!');">
+      <input type="email" placeholder="Enter your email" required />
+      <button class="btn" type="submit"><i class="fa-solid fa-paper-plane"></i> Subscribe</button>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="footer-pro wrapper">
+  <div class="wrapper footer-grid">
+    <div class="foot-brand">
+      <a href="index.html" class="logo">Foodie.</a>
+      <p>Fresh fast food with premium delivery experience. Order, track & enjoy.</p>
+
+      <div class="foot-social">
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </div>
+
+    <div class="foot-links">
+      <h4>Quick Links</h4>
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+      <a href="cart.html">Cart</a>
+    </div>
+
+    <div class="foot-links">
+      <h4>Support</h4>
+      <a href="#">FAQs</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms & Conditions</a>
+      <a href="#">Refund Policy</a>
+    </div>
+
+    <div class="foot-contact">
+      <h4>Contact</h4>
+      <p><i class="fa-solid fa-phone"></i> +92 300 0000000</p>
+      <p><i class="fa-solid fa-envelope"></i> support@foodie.com</p>
+      <p><i class="fa-solid fa-location-dot"></i> Pakistan</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="wrapper bottom-row">
+      <span>© 2026 Foodie. All rights reserved.</span>
+      <span>Made with <i class="fa-solid fa-heart"></i> for food lovers</span>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

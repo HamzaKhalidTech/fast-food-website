@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Foodie - Menu</title>
+</head>
+<body>
+
+<header>
+  <nav class="navbar flex between wrapper">
+    <a href="index.html" class="logo">Foodie.</a>
+
+    <ul class="navlist flex gap-3" id="desktopMenu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html" class="active">Menu</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="reviews.html">Reviews</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="admin.html">Admin</a></li>
+      <li>
+        <a href="cart.html" class="cart-icon" aria-label="Cart">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="cart-value" id="cartCount">0</span>
+        </a>
+      </li>
+    </ul>
+
+    <a href="#" class="hamburger" id="hamburgerBtn" aria-label="Open Menu">
+      <i class="fa-solid fa-bars"></i>
+    </a>
+
+    <ul class="mobile-menu" id="mobileMenu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html" class="active">Menu</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="reviews.html">Reviews</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="admin.html">Admin</a></li>
+      <li><a href="cart.html">Cart</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="wrapper p-top">
+  <div class="text-center">
+    <h5>Our Menu</h5>
+    <h2>The Most Popular</h2>
+  </div>
+
+  <!-- ✅ Toolbar -->
+  <div class="menu-toolbar mt-4">
+    <div class="toolbar-left">
+      <label class="small-label">Search</label>
+      <input id="menuSearch" type="text" placeholder="Search food..." />
+    </div>
+
+    <div class="toolbar-right">
+      <div>
+        <label class="small-label">Category</label>
+        <select id="categorySelect" class="select">
+          <option value="all">All</option>
+          <option value="italian">Italian</option>
+          <option value="fastfood">Fastfood</option>
+          <option value="pasta">Pasta</option>
+          <option value="dessert">Dessert</option>
+          <option value="drinks">Drinks</option>
+        </select>
+      </div>
+
+      <div>
+        <label class="small-label">Sort</label>
+        <select id="sortSelect" class="select">
+          <option value="none">Default</option>
+          <option value="price-asc">Price: Low → High</option>
+          <option value="price-desc">Price: High → Low</option>
+          <option value="name-asc">Name: A → Z</option>
+        </select>
+      </div>
+
+      <div>
+        <label class="small-label">Max Price</label>
+        <input id="priceRange" type="range" min="5" max="50" value="50" />
+        <div class="range-value">Up to: <span id="priceValue">$50</span></div>
+      </div>
+
+      <button class="btn btn-soft" id="clearFilters">Clear</button>
+      <a class="btn" href="cart.html">Go to Cart</a>
+    </div>
+  </div>
+
+  <div id="menuList" class="grid-row mt-3"></div>
+</main>
+
+<footer>© 2026 Foodie. All rights reserved.</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

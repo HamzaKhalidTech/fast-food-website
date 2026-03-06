@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Foodie - Services</title>
+</head>
+<body>
+
+<header>
+  <nav class="navbar flex between wrapper">
+    <a href="index.html" class="logo">Foodie.</a>
+
+    <ul class="navlist flex gap-3">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="services.html" class="active">Services</a></li>
+      <li><a href="reviews.html">Reviews</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li>
+        <a href="cart.html" class="cart-icon" aria-label="Cart">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="cart-value">0</span>
+        </a>
+      </li>
+    </ul>
+
+    <a href="#" class="hamburger" id="hamburgerBtn" aria-label="Open Menu">
+      <i class="fa-solid fa-bars"></i>
+    </a>
+
+    <ul class="mobile-menu" id="mobileMenu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="services.html" class="active">Services</a></li>
+      <li><a href="reviews.html">Reviews</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="cart.html">Cart</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="wrapper p-top">
+
+  <!-- ✅ HERO -->
+  <section class="card" style="padding:2rem;max-width:1100px;margin:0 auto;">
+    <div class="flex between" style="gap:2rem;flex-wrap:wrap;">
+      <div style="flex:1;min-width:280px;">
+        <h5>Services</h5>
+        <h2 style="margin-top:.5rem;">A premium experience from kitchen to your door</h2>
+        <p style="margin-top:.8rem;color:rgba(33,33,33,.75);line-height:1.8;max-width:620px;">
+          Foodie makes ordering simple and fast. From curated menu to secure checkout and real-time delivery,
+          we ensure your food arrives fresh, hot, and on time — every single time.
+        </p>
+
+        <div class="flex gap-2" style="margin-top:1.2rem;flex-wrap:wrap;">
+          <a href="menu.html" class="btn"><i class="fa-solid fa-utensils"></i>&nbsp; Explore Menu</a>
+          <a href="contact.html" class="btn btn-soft"><i class="fa-regular fa-message"></i>&nbsp; Talk to Us</a>
+        </div>
+      </div>
+
+      <!-- Stats -->
+      <div style="flex:0 0 360px;min-width:280px;">
+        <div class="grid-row" style="gap:1rem;">
+          <div class="card text-center" style="padding:1.2rem;">
+            <h3 style="font-size:2rem;">4.9★</h3>
+            <p style="margin-top:.25rem;">Average rating</p>
+          </div>
+          <div class="card text-center" style="padding:1.2rem;">
+            <h3 style="font-size:2rem;">25–35m</h3>
+            <p style="margin-top:.25rem;">Fast delivery</p>
+          </div>
+          <div class="card text-center" style="padding:1.2rem;">
+            <h3 style="font-size:2rem;">100%</h3>
+            <p style="margin-top:.25rem;">Fresh ingredients</p>
+          </div>
+          <div class="card text-center" style="padding:1.2rem;">
+            <h3 style="font-size:2rem;">24/7</h3>
+            <p style="margin-top:.25rem;">Support</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ✅ MAIN SERVICES -->
+  <section class="mt-4">
+    <div class="text-center">
+      <h5>What we offer</h5>
+      <h2>Services built for quality</h2>
+      <p style="margin-top:.6rem;color:rgba(33,33,33,.75);max-width:760px;margin-inline:auto;line-height:1.8;">
+        Everything is optimized for speed, quality, and trust — so you can order confidently.
+      </p>
+    </div>
+
+    <div class="grid-row mt-4">
+      <div class="card text-center">
+        <div class="icon-box"><img src="images/easy-to-order.png" alt="Easy to Order"></div>
+        <h3 class="mt-2">Easy to Order</h3>
+        <p>Search, filter, and add to cart in seconds — a smooth premium ordering experience.</p>
+      </div>
+
+      <div class="card text-center">
+        <div class="icon-box"><img src="images/fast-delivery.png" alt="Fast Delivery"></div>
+        <h3 class="mt-2">Fast Delivery</h3>
+        <p>Quick delivery with clear updates so you always know when your food arrives.</p>
+      </div>
+
+      <div class="card text-center">
+        <div class="icon-box"><img src="images/best-quality.png" alt="Best Quality"></div>
+        <h3 class="mt-2">Best Quality</h3>
+        <p>Fresh ingredients, hygienic packaging, and strict quality checks for every order.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ✅ PROCESS STEPS -->
+  <section class="mt-4">
+    <div class="text-center">
+      <h5>Process</h5>
+      <h2>How it works</h2>
+    </div>
+
+    <div class="grid-row mt-4">
+      <div class="card">
+        <h3><i class="fa-solid fa-magnifying-glass" style="color:var(--gold);"></i> 1) Discover</h3>
+        <p>Browse items, apply filters, and pick your favorites from our curated menu.</p>
+      </div>
+
+      <div class="card">
+        <h3><i class="fa-solid fa-cart-shopping" style="color:var(--gold);"></i> 2) Checkout</h3>
+        <p>Review your cart and place order with a simple, secure checkout experience.</p>
+      </div>
+
+      <div class="card">
+        <h3><i class="fa-solid fa-motorcycle" style="color:var(--gold);"></i> 3) Delivered</h3>
+        <p>Your meal is prepared fresh and delivered quickly — hot, safe, and delicious.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ✅ WHY CHOOSE US -->
+  <section class="mt-4">
+    <div class="card" style="padding:2rem;max-width:1100px;margin:0 auto;">
+      <div class="flex between" style="gap:2rem;flex-wrap:wrap;">
+        <div style="flex:1;min-width:280px;">
+          <h5>Why Foodie</h5>
+          <h2 style="margin-top:.5rem;">Premium service you can trust</h2>
+          <p style="margin-top:.7rem;color:rgba(33,33,33,.75);line-height:1.8;max-width:650px;">
+            We focus on consistent quality, reliable delivery, and a beautiful ordering experience.
+            That’s why customers keep coming back.
+          </p>
+        </div>
+
+        <div style="flex:1;min-width:280px;">
+          <div class="grid-row" style="gap:1rem;">
+            <div class="card" style="padding:1.1rem;">
+              <h4><i class="fa-solid fa-shield-halved" style="color:var(--gold);"></i> Hygiene First</h4>
+              <p style="margin-top:.4rem;">Clean prep, safe packing, and careful handling end-to-end.</p>
+            </div>
+            <div class="card" style="padding:1.1rem;">
+              <h4><i class="fa-solid fa-bolt" style="color:var(--gold);"></i> Quick Support</h4>
+              <p style="margin-top:.4rem;">Fast customer support when you need help or updates.</p>
+            </div>
+            <div class="card" style="padding:1.1rem;">
+              <h4><i class="fa-solid fa-leaf" style="color:var(--gold);"></i> Fresh Ingredients</h4>
+              <p style="margin-top:.4rem;">Quality ingredients for better taste and healthier meals.</p>
+            </div>
+            <div class="card" style="padding:1.1rem;">
+              <h4><i class="fa-solid fa-star" style="color:var(--gold);"></i> Top Rated</h4>
+              <p style="margin-top:.4rem;">Trusted by customers for taste, delivery, and service quality.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ✅ CTA -->
+  <section class="mt-4">
+    <div class="card text-center" style="padding:2.2rem;max-width:1100px;margin:0 auto;">
+      <h2>Ready to order something delicious?</h2>
+      <p style="margin-top:.7rem;color:rgba(33,33,33,.75);max-width:760px;margin-inline:auto;line-height:1.8;">
+        Explore the menu, add items to your cart, and enjoy a premium food experience — fast and easy.
+      </p>
+      <div class="flex" style="justify-content:center;gap:1rem;margin-top:1.2rem;flex-wrap:wrap;">
+        <a href="menu.html" class="btn"><i class="fa-solid fa-bag-shopping"></i>&nbsp; Order Now</a>
+        <a href="reviews.html" class="btn btn-soft"><i class="fa-regular fa-star"></i>&nbsp; See Reviews</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>© 2026 Foodie. All rights reserved.</footer>
+<script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Foodie - Contact</title>
+</head>
+<body>
+
+<header>
+  <nav class="navbar flex between wrapper">
+    <a href="index.html" class="logo">Foodie.</a>
+    <ul class="navlist flex gap-3">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="reviews.html">Reviews</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="cart.html" class="cart-icon"><i class="fa-solid fa-bag-shopping"></i><span class="cart-value">0</span></a></li>
+    </ul>
+
+    <a href="#" class="hamburger" id="hamburgerBtn"><i class="fa-solid fa-bars"></i></a>
+    <ul class="mobile-menu" id="mobileMenu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="reviews.html">Reviews</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="cart.html">Cart</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="wrapper p-top">
+  <div class="text-center">
+    <h5>Contact</h5>
+    <h2>Get in touch</h2>
+  </div>
+
+  <form class="form mt-4" id="contactForm">
+    <div class="row">
+      <div class="input">
+        <label>Name</label>
+        <input type="text" name="name" placeholder="Your name" />
+      </div>
+      <div class="input">
+        <label>Email</label>
+        <input type="email" name="email" placeholder="Your email" />
+      </div>
+    </div>
+
+    <div class="input">
+      <label>Message</label>
+      <textarea name="message" placeholder="Write message..."></textarea>
+    </div>
+
+    <button class="btn mt-2" type="submit">Send Message</button>
+    <div class="msg" id="formMsg"></div>
+  </form>
+</main>
+
+<footer>© 2026 Foodie. All rights reserved.</footer>
+<script src="main.js"></script>
+</body>
+</html>
