@@ -1,0 +1,5 @@
+[
+  { "id": "lasagna",   "name": "Lasagna",   "price": 15, "category": "italian",  "image": "images/lasagna.png" },
+  { "id": "pizza",     "name": "Pizza",     "price": 20, "category": "fastfood", "image": "images/pizza.png" },
+  { "id": "spaghetti", "name": "Spaghetti", "price": 18, "category": "pasta",    "image": "images/spaghetti.png" }
+]
